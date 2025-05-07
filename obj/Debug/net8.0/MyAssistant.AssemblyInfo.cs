@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyAssistant")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b495b423199428af46a549fd005a3e179859e4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyAssistant")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyAssistant")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
