@@ -12,3 +12,6 @@ packages/
 # Optional: VS Code/JetBrains Rider settings
 .vscode/
 .idea/
+
+# Ignore Bootstrap files installed via LibMan or manually placed
+wwwroot/lib/bootstrap/

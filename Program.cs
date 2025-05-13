@@ -1,7 +1,19 @@
+using Microsoft.EntityFrameworkCore;
+using MyAssistant.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add database context in container
+builder.Services.AddDbContext<MyAssistantContext>(options =>
+{
+    options.UseSqlServer(
+        builder.Configuration["ConnectionStrings:MyAssistantConnection"]);
+});
+
+builder.Services.AddScoped<IMyAssistantRepo, MyAssistantRepoClass>();
 
 var app = builder.Build();
 
