@@ -1,0 +1,109 @@
+LAYOUTS IN BOOTSTRAP:
+
+*******************************************************************************************
+FLEXBOX layout
+to set the flex layout on <div> in bootstrap:
+	1. <divv class="d-flex"> -> this is the new way of setting flex layout. direct children become flex items.
+    2. <div class="d-flex flex-row"> Items are laid out horizontally (left to right, default).
+            Add prefixes like flex-{breakpoint}-* (e.g., flex-md-row for medium screens and up).
+    3. <div class="d-flex flex-column"> Items are laid out vertically (top to bottom). flex-row vs flex-column in bootstrap is that
+    4. <div class="flex-container"> -> this is the old way of setting flex layout, but it is not recommended anymore.
+    5. <div class="fluid-container"> -> this is the old way of setting fluid layout, but it is not recommended anymore.
+    6. <div class="container-fluid"> -> this is the new way of setting fluid layout. It is used to set the layout to 100% width.
+                The default width of container-fluid is set to 100% and the max-width is set to 100%. So, if you want to set the layout to 100% width, you can use this class.
+    7. <div class="container"> -> this is the new way of setting container layout. container layout is the type of layout where default
+                width of container is set to 100% and the max-width is set to 1200px. So, if you want to set the layout to 100% width, you can use this class.
+
+justify content for flex items:
+    1. justify-content-start -> aligns flex items to the left (default).
+    2. justify-content-end -> aligns flex items to the right.
+    3. justify-content-center -> aligns flex items to the center.
+    4. justify-content-between -> aligns flex items with space between them.
+    5. justify-content-around -> aligns flex items with space around them.
+    6. justify-content-evenly -> aligns flex items with equal space around them.
+    Responsive Variants: justify-content-{breakpoint}-* (e.g., justify-content-md-center).
+
+align items for flex items:
+    1. align-items-start -> aligns flex items to the top.
+    2. align-items-end -> aligns flex items to the bottom.
+    3. align-items-center -> aligns flex items to the center.
+    4. align-items-baseline -> aligns flex items to the baseline.
+    5. align-items-stretch -> stretches flex items to fill the container.
+    Responsive Variants: align-items-{breakpoint}-* (e.g., align-items-md-center).
+*******************************************************************************************
+GRID layout
+to set the grid layout on <div> in bootstrap:
+    1. <div class="row"> -> row: Defines a horizontal row (acts as a flex container).
+    2. <div class="col"> -> col: Defines a column. (e.g., col-6 for half-width, col-md-4 for responsive) (acts as a flex item).
+        Example:
+        <div class="row g-3">
+          <div class="col-6 border">Column 1</div>
+          <div class="col-6 border">Column 2</div>
+        </div>
+
+        Responsive example:
+        <div class="row g-3">
+          <div class="col-6 col-md-4 border">Column 1</div>
+          <div class="col-6 col-md-4 border">Column 2</div>
+          <div class="col-6 col-md-4 border">Column 3</div>
+        </div>
+*******************************************************************************************
+SPECIAL CASE:
+In this type of cases:
+	                  <div class="d-flex align-items-center border">
+                        <img src="images/doll.jpg" alt="Profile" class="rounded-circle img-fluid border" style="width: 40px; height: 40px; object-fit: cover;">
+                        <p class="border m-0">My name</p>
+                    </div>
+     the although the align-items-center is set, the <p> will not get centered vertically if you donot use m-0. 
+     Because <p> has a default margin of 1.25rem top and bottom. So, to center the <p> vertically, you need to set m-0 on it.
+
+
+*******************************************************************************************
+
+BOOTSTRAP Navbar layout:
+    Classes:
+    1. navbar: Defines the navbar container. Applied to <nav>.
+    2. navbar-nav: Creates the horizontal list of navigation items. Applied to <ul>.
+    3. nav-item, nav-link: Defines each navigation item or link. Applied to <li>.
+    4. navbar-brand: Defines the brand/logo section. Applied to <a> or <div>.
+    5. navbar-toggler: Defines the button for toggling the navbar on smaller screens. Applied to <button>.
+        - This button is visible only on smaller screens and is used to expand/collapse the navbar.
+        - Example: <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">...</button>
+            Where, data-bs-toggle="collapse" is used to toggle the collapse behavior. It is used to show/hide the collapsible part of the navbar. Commonly used with the navbar-toggler class.
+            Also, data-bs-target="#navbarNav" is used to specify the target element to be toggled or collapsed/uncollapsed. It is used to show/hide the collapsible part of the navbar. Commonly used with the navbar-toggler class.
+            aria-controls="navbarNav" is used to specify the target element to be toggled or collapsed/uncollapsed. It is used to show/hide the collapsible part of the navbar. Commonly used with the navbar-toggler class.
+            aria-controls is optional, but it is recommended to use it for accessibility purposes.
+            aria-expanded is used to specify whether the target element is expanded or collapsed. It is used to show/hide the collapsible part of the navbar. Commonly used with the navbar-toggler class.
+            aria-label is used to specify the label for the button. It is used to show/hide the collapsible part of the navbar. Commonly used with the navbar-toggler class.
+            - Example: <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>
+            navbar-toggler-icon: Defines the icon for the toggler button. Applied to <span> inside the button.
+
+
+    6. collapse navbar-collapse: Defines the collapsible part of the navbar. Applied to <div>.
+        - This class is used to hide the navbar items on smaller screens.
+        - Example: <div class="collapse navbar-collapse" id="navbarNav">...</div>
+            Where, id="navbarNav" is used to specify the target element to be toggled or collapsed/uncollapsed. It is used to show/hide the collapsible part of the navbar. Commonly used with the navbar-toggler class.
+            collapse is used to hide the navbar items on smaller screens. It is used to show/hide the collapsible part of the navbar. Commonly used with the navbar-toggler class.
+    7. navbar-expand-{breakpoint}: Defines when the navbar should expand (e.g., navbar-expand-lg for large screens and up). Applied to <nav>.
+        - The navbar will be collapsed on smaller screens and expanded on larger screens.
+        - You can use different breakpoints like sm, md, lg, xl, or xxl to control the expansion behavior.
+        - Example: <nav class="navbar navbar-expand-lg"> will expand on large screens and collapse on smaller ones.
+    8. bg-light, bg-dark: Sets the background color of the navbar. Applied to <nav>.
+    9. ms-auto: Aligns the navbar items to the right.
+    10. me-auto: Aligns the navbar items to the left.
+    
+   In nav items:
+   1. active: Indicates the currently active page or section.
+   2. nav-link: Defines a navigation link.
+        - Example: <a class="nav-link" href="#">Link</a>
+        - You can also use nav-link active to indicate the active link.
+        - Example: <a class="nav-link active" href="#">Active Link</a>
+   2. disabled: Disables a navigation item (not clickable).
+   3. dropdown: Creates a dropdown menu within the navbar.
+        - Example: <li class="nav-item dropdown">...</li>
+        - Inside the dropdown, you can use <ul class="dropdown-menu"> to define the dropdown items.
+        - Use data-bs-toggle="dropdown" on the link to toggle the dropdown menu.
+        - Example: <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+
+
+*******************************************************************************************

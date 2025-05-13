@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/karki/Documents/My Folder/Asp.NetCore/MyAssistant/MyAssistant/Views/Account/LoginPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/karki/Documents/My Folder/Asp.NetCore/MyAssistant/MyAssistant/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/karki/Documents/My Folder/Asp.NetCore/MyAssistant/MyAssistant/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/karki/Documents/My Folder/Asp.NetCore/MyAssistant/MyAssistant/Views/Shared/SideNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZGVOYXYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/karki/Documents/My Folder/Asp.NetCore/MyAssistant/MyAssistant/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/karki/Documents/My Folder/Asp.NetCore/MyAssistant/MyAssistant/Views/Shared/_Naavbarr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYWF2YmFyci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/karki/Documents/My Folder/Asp.NetCore/MyAssistant/MyAssistant/Views/Shared/_ValidationScriptsPartial.cshtml]

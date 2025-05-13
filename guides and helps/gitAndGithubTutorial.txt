@@ -176,12 +176,18 @@ git
 
 2. **Resolve README Conflict**:
 
-   - Since the GitHub repository has a `README.md` file, you’ll need to pull it to avoid conflicts:
+   - Since the GitHub repository has a `README.md` file, you’ll need to pull it to avoid conflicts. The following command will
+     update your local branch with the latest changes from the remote main branch, even if the two branches have completely separate 
+     commit histories.
 
      ```bash
      git pull origin main --allow-unrelated-histories
      ```
    - If prompted, resolve any merge conflicts (e.g., keep both your files and the `README.md`).
+   - "git pull" will fetch the remote chnages and merge the remote changes into your local branch.
+   - "origin": The name of the remote repository (usually the default name for the original remote)
+   - "main": The name of the branch in remote repository you want to pull changes from (default branch name in GitHub).
+   - `--allow-unrelated-histories`: This option allows merging two unrelated histories (your local repo and the remote repo).
 
 3. **Push Your Code**:
 
@@ -226,7 +232,7 @@ git
      git push origin main
      ```
 
-## Step 8: Use Branching for Features
+## Step 8: Use Branching for Features 
 
 Branching allows you to work on new features without affecting the main codebase.
 
